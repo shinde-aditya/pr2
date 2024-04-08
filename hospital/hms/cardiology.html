@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: rgb(239, 235, 235);
+        
+        }
+        h1{
+            text-align: center;
+            color: rgb(16, 1, 1);
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            height: 90vh;
+            background: linear-gradient(to bottom right, #82dff4, #cdb4db);
+            margin: 5px;
+        }
+
+        .box {
+           /* background:  linear-gradient(to bottom right, #3cea5b, #121212);*/
+            background: linear-gradient(135deg, #66ffcc, #99ff99);;
+            border-radius: 20px;
+            transition: transform 0.5s;
+            cursor: pointer;
+            margin: 20px;
+            position: relative;
+            perspective: 80px;
+            margin: 30px;
+        }
+
+        .flip-flop {
+            transform-style: preserve-3d;
+        }
+
+        .box:hover {
+            transform: rotateY(180deg);
+        }
+
+        .front,
+        .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+          /*  display: flex;*/
+            justify-content: center;
+            align-items: center;
+            backface-visibility: hidden;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .back {
+            transform: rotateY(180deg);
+        }
+    </style>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip-Flop Boxes</title>
+   
+</head>
+<h1>CARDIOLOGY</h1>
+<body>
+<div class="container">
+    <div class="box flip-flop">
+        <div class="front">
+           <h1> GHARDA HOSPITAL,LAVEL</h1>
+        </div>
+        <div class="back">
+            <h2>Our specialist</h2><hr color="black">
+          <h2> Dr.Sujeet Ghadge</h2>
+          <br>
+          <h3>Contact :- 4589631278</h3>
+        </div>
+    </div>
+    <div class="box flip-flop">
+        <div class="front">
+          <h1>Shinde Cardiology Specilist,Pune</h1>
+        </div>
+        <div class="back">
+            <h2>Our specialist</h2><hr color="black">
+            <h2> Dr.Rahul Shinde</h2>
+            <br>
+            <h3>Contact :- 9589231678</h3>
+        </div>
+    </div>
+    <div class="box flip-flop">
+        <div class="front">
+            <h1>Lilavati Hospital and Research Centre, Mumbai</h1>
+        </div>
+        <div class="back">
+            <h2>Our specialist</h2><hr color="black">
+            <h2> Dr.Rajesh Shrke</h2>
+            <br>
+            <h3>Contact :- 9689319208</h3>
+        </div>
+    </div>
+    <div class="box flip-flop">
+        <div class="front">
+        <h1>Ruby Hall Clinic, Pune</h1>
+        </div>
+        <div class="back">
+            <h2>Our specialist</h2><hr color="black">
+            <h2> Dr.Malhar Ghole</h2>
+            <br>
+            <h3>Contact :- 9682019008</h3>
+        </div>
+    </div>
+    <div class="box flip-flop">
+        <div class="front">
+            <h1>Kokilaben Dhirubhai Ambani Hospital, Mumbai</h1>
+        </div>
+        <div class="back">
+            <h2>Our specialist</h2><hr color="black">
+            <h2> Dr.Pranav Gaykar</h2>
+            <br>
+            <h3>Contact :- 9158963600</h3>
+        </div>
+    </div>
+    <div class="box flip-flop">
+        <div class="front">
+            <h1>KEM Hospital, Pune</h1>
+        </div>
+        <div class="back">
+            <h2>Our specialist</h2><hr color="black">
+            <h2> Dr.Ritu Chavan</h2>
+            <br>
+            <h3>Contact :- 4596321478</h3>
+        </div>
+    </div>
+</div>
+</body>
+</html>

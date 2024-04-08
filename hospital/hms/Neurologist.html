@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: rgb(239, 235, 235);
+        
+        }
+        h1{
+            text-align: center;
+            color: rgb(16, 1, 1);
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            height: 90vh;
+            background: linear-gradient(to bottom right, #d6dcd0, #d32e4f);
+            margin: 5px;
+        }
+
+        .box {
+           /* background:  linear-gradient(to bottom right, #3cea5b, #121212);*/
+            background: linear-gradient(135deg, #7c75dd, #99ff99);;
+            border-radius: 20px;
+            transition: transform 0.5s;
+            cursor: pointer;
+            margin: 20px;
+            position: relative;
+            perspective: 80px;
+            margin: 30px;
+        }
+
+        .flip-flop {
+            transform-style: preserve-3d;
+        }
+
+        .box:hover {
+            transform: rotateY(180deg);
+        }
+
+        .front,
+        .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+          /*  display: flex;*/
+            justify-content: center;
+            align-items: center;
+            backface-visibility: hidden;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .back {
+            transform: rotateY(180deg);
+        }
+    </style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip-Flop Boxes</title>
+   
+</head>
+<h1>NEUROLOGIST</h1>
+<body>
+<div class="container">
+    <div class="box flip-flop">
+        <div class="front">
+           <h1> Tata Memorial Hospital,Mumbai</h1>
+        </div>
+        <div class="back">
+            <h2>Our specialist</h2><hr color="black">
+          <h2> Dr.Utkarsh Mandhare</h2>
+          <br>
+          <h3>Contact :- 4589030270</h3>
+        </div>
+    </div>
+    <div class="box flip-flop">
+        <div class="front">
+          <h1>Deenanath Mangeshkar Hospital,Pune</h1>
+        </div>
+        <div class="back">
+            <h2>Our specialist</h2><hr color="black">
+            <h2> Dr.Shivam Chanchal</h2>
+            <br>
+            <h3>Contact :- 9509030670</h3>
+        </div>
+    </div>
+    <div class="box flip-flop">
+        <div class="front">
+            <h1>Apollo Hospitals,Nashik</h1>
+        </div>
+        <div class="back">
+            <h2>Our specialist</h2><hr color="black">
+            <h2> Dr.Akashy Chavan</h2>
+            <br>
+            <h3>Contact :- 8668919218</h3>
+        </div>
+    </div>
+    <div class="box flip-flop">
+        <div class="front">
+        <h1>Sancheti Hospital, Pune</h1>
+        </div>
+        <div class="back">
+            <h2>Our specialist</h2><hr color="black">
+            <h2> Dr.Aadinath Mahadik</h2>
+            <br>
+            <h3>Contact :- 9630019008</h3>
+        </div>
+    </div>
+    <div class="box flip-flop">
+        <div class="front">
+            <h1>Yashoda Hospitals - Pune</h1>
+        </div>
+        <div class="back">
+            <h2>Our specialist</h2><hr color="black">
+            <h2> Dr.Pranit Jangam</h2>
+            <br>
+            <h3>Contact :- 7156357600</h3>
+        </div>
+    </div>
+    <div class="box flip-flop">
+        <div class="front">
+            <h1>KEM Hospital, Pune</h1>
+        </div>
+        <div class="back">
+            <h2>Our specialist</h2><hr color="black">
+            <h2> Dr.Ram Chavan</h2>
+            <br>
+            <h3>Contact :- 8596400478</h3>
+        </div>
+    </div>
+</div>
+</body>
+</html>
